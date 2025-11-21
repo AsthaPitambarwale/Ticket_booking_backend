@@ -120,6 +120,7 @@ DATABASES = {
 ### 4️⃣ Run Migrations
 
 ```bash
+python manage.py makemigrations
 python manage.py migrate
 ```
 
@@ -325,3 +326,4 @@ This backend delivers:
 
 
 It is ready for real world usage, scalability, and professional demonstration.
+
