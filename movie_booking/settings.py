@@ -25,7 +25,11 @@ SECRET_KEY = 'django-insecure-3)o^e^0)eke^@brw6jvj$_kuh4!1#nt^d4#kxk+m!p9k-@ppb-
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [
+    'ticket-booking-backend-ow9x.onrender.com',
+    'localhost',
+    '127.0.0.1'
+]
 
 
 # Application definition
