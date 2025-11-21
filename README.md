@@ -3,7 +3,6 @@
 🚀 Fully Production-Grade | Concurrency Safe | Swagger Enabled | Custom HTML Landing Page
 
 This project is a fully-featured Movie Ticket Booking Backend System built with:
-
 •   Django
 •   Django REST Framework
 •   JWT Authentication
