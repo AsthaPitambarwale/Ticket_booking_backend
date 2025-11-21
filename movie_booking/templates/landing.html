@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Booking API</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: "Poppins", sans-serif;
+            background: linear-gradient(135deg, #848484ff, #1a1a1a);
+            color: #fff;
+        }
+
+        header {
+            padding: 40px;
+            text-align: center;
+        }
+
+        .title {
+            font-size: 48px;
+            font-weight: 700;
+            letter-spacing: 1px;
+            color: #ffca28;
+            text-transform: uppercase;
+        }
+
+        .subtitle {
+            margin-top: 10px;
+            font-size: 18px;
+            opacity: 0.8;
+        }
+
+        .container {
+            margin-top: 40px;
+            width: 90%;
+            max-width: 900px;
+            margin-left: auto;
+            margin-right: auto;
+            padding: 30px;
+            border-radius: 16px;
+            background: rgba(185, 176, 176, 0.08);
+            backdrop-filter: blur(6px);
+            text-align: center;
+        }
+
+        .btn {
+            display: inline-block;
+            margin: 15px;
+            padding: 16px 28px;
+            border-radius: 30px;
+            text-decoration: none;
+            font-size: 17px;
+            color: #000;
+            background-color: #ffca28;
+            transition: all 0.3s ease;
+            font-weight: 600;
+        }
+
+        .btn:hover {
+            background-color: #ffd95b;
+            transform: translateY(-3px);
+            box-shadow: 0px 6px 18px rgba(255, 202, 40, 0.4);
+        }
+
+        footer {
+            margin-top: 40px;
+            padding: 20px;
+            text-align: center;
+            font-size: 14px;
+            opacity: 0.7;
+        }
+
+        .api-card {
+            margin-top: 30px;
+            padding: 20px;
+            background: rgba(0,0,0,0.4);
+            border-radius: 10px;
+            text-align: left;
+        }
+
+        .api-title {
+            color: #ffca28;
+            font-size: 20px;
+            font-weight: 600;
+        }
+
+        .api-item {
+            margin: 8px 0;
+        }
+
+        .code {
+            font-family: monospace;
+            color: #b0eaff;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <div class="title">🎬 Movie Booking API</div>
+    <div class="subtitle">Advanced Django REST API with JWT, Concurrency Safe Booking & Swagger</div>
+</header>
+
+<div class="container">
+
+    <a href="/swagger/" class="btn">📘 Open Swagger Docs</a>
+    <a href="/api/movies/" class="btn">🎞️ View Movies API</a>
+    <a href="/admin/" class="btn">🛠 Admin Panel</a>
+
+    <div class="api-card">
+        <div class="api-title">Quick API Overview</div>
+
+        <div class="api-item">
+            <span class="code">POST /api/signup/</span> — Register User
+        </div>
+
+        <div class="api-item">
+            <span class="code">POST /api/login/</span> — JWT Login (access + refresh token)
+        </div>
+
+        <div class="api-item">
+            <span class="code">GET /api/movies/</span> — List all movies
+        </div>
+
+        <div class="api-item">
+            <span class="code">GET /api/movies/&lt;id&gt;/shows/</span> — Shows for movie
+        </div>
+
+        <div class="api-item">
+            <span class="code">POST /api/shows/&lt;id&gt;/book/</span> — Book seat (JWT)
+        </div>
+
+        <div class="api-item">
+            <span class="code">GET /api/my-bookings/</span> — Your bookings
+        </div>
+    </div>
+</div>
+
+<footer>
+    © 2025 Movie Booking API • Built using Django, DRF & JWT Authentication
+</footer>
+
+</body>
+</html>
